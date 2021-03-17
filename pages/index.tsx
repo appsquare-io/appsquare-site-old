@@ -2,7 +2,7 @@ import { Meta, Divider, List, Footer } from 'components'
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center w-full px-10 mt-40 md:px-4 lg:px-6">
+    <div className="flex flex-col items-center w-full px-8 mt-40 md:px-4 lg:px-6">
       <Meta />
 
       <div className="flex flex-col w-full max-w-xl space-y-10">
