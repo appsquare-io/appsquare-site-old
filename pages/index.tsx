@@ -9,7 +9,7 @@ const Home = () => {
       <Navbar />
       <Head />
       <main>
-        <Column size="small" className="mt-32">
+        <Column size="small" className="mt-0 sm:mt-20 md:mt-32">
           <h1 className="text-3xl font-extrabold text-transparent sm:text-4xl md:text-6xl bg-clip-text bg-gradient-to-br from-red-400 to-pink-600">
             Hands-on digital agency for delightful apps, websites, and ideas.
           </h1>
