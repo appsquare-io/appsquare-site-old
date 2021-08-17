@@ -29,15 +29,15 @@ const Menu = ({ onClose }) => {
       </Column>
 
       <motion.div initial={{ y: -50 }} animate={{ y: 0 }} exit={{ y: -15 }}>
-        <div className="flex flex-col justify-between max-w-xl px-10 mx-auto my-16 space-y-10 text-black sm:my-32 sm:space-y-0 sm:flex-row lg:px-0">
-          <div className="flex flex-col space-y-10">
+        <div className="flex flex-col justify-between max-w-xl px-10 mx-auto my-16 space-y-8 text-black sm:my-32 sm:space-y-0 sm:flex-row lg:px-0">
+          <div className="flex flex-col space-y-8 sm:space-y-10">
             {mainItems.map((item) => (
               <MenuLink href={item.href} key={item.label}>
                 {item.label}
               </MenuLink>
             ))}
           </div>
-          <div className="flex flex-col pt-3 space-y-10">
+          <div className="flex flex-col pt-3 space-y-8 sm:space-y-10">
             {subItems.map((item) => (
               <MenuLinkSmall href={item.href} key={item.label}>
                 {item.label}
@@ -54,7 +54,7 @@ export default Menu
 
 const MenuLink = ({ children, href }) => (
   <NextLink href={href} passHref>
-    <a className="text-4xl font-extrabold text-black sm:text-5xl hover:text-gray-700">
+    <a className="text-3xl font-extrabold text-black sm:text-5xl hover:text-gray-700">
       {children}
     </a>
   </NextLink>
