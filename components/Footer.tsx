@@ -1,7 +1,7 @@
 import { HeartIcon } from '@heroicons/react/solid'
-import { Column } from 'components'
+import Column from 'components/Column'
 
-export const Footer = () => (
+const Footer = () => (
   <Column size="small">
     <footer className="w-full pt-8 my-14">
       <div className="flex flex-col items-center justify-between space-y-6 sm:flex-row sm:space-y-0">
@@ -22,6 +22,8 @@ export const Footer = () => (
     </footer>
   </Column>
 )
+
+export default Footer
 
 const GitHubIcon = (props) => (
   <svg
