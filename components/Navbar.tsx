@@ -4,6 +4,7 @@ import { MenuAlt4Icon } from '@heroicons/react/outline'
 import { AnimatePresence } from 'framer-motion'
 import Column from 'components/Column'
 import Menu from 'components/Menu'
+import Logo from 'components/Logo'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -27,11 +28,7 @@ const Navbar = () => {
       <Column>
         <div className="flex items-center justify-between w-full my-14">
           <NextLink href="/">
-            <img
-              src="/A.png"
-              alt="Appsquare logo"
-              className="w-auto h-10 cursor-pointer"
-            />
+            <Logo className="w-auto h-10 cursor-pointer" />
           </NextLink>
           <button onClick={() => setShowMenu(true)}>
             <MenuAlt4Icon className="w-auto h-8 cursor-pointer hover:text-gray-600" />
