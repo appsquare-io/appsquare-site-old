@@ -1,29 +1,26 @@
 import NextLink from 'next/link'
-import { Column } from 'components'
-import Head from 'components/Head'
-import Navbar from 'components/Navbar'
-import { Footer } from 'components/Footer'
+import Layout from 'components/Layout'
+import { PageColumn } from 'components/Column'
+import PageHeader from 'components/PageHeader'
+import PageDescription from 'components/PageDescription'
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <>
-      <Navbar />
-      <Head />
+    <Layout>
       <main>
-        <Column size="small" className="mt-0 sm:mt-20 md:mt-28">
-          <h1 className="text-3xl font-extrabold text-transparent sm:text-4xl md:text-6xl bg-clip-text bg-gradient-to-br from-red-400 to-pink-600">
+        <PageColumn>
+          <PageHeader>
             Hands-on digital agency for delightful apps, websites, and ideas.
-          </h1>
+          </PageHeader>
 
-          <p className="mt-5 text-2xl font-semibold text-gray-800 sm:text-3xl">
+          <PageDescription>
             Appsquare <span className="line-through">builds</span> crafts{' '}
-            <Link href="/projects">digital experiences</Link> for{' '}
-            <Link href="/clients">awesome companies</Link> around the world. We
-            strive for efficiency, using the best{' '}
+            <Link href="/work">digital experiences</Link> for awesome companies
+            around the world. We strive for efficiency, using the best{' '}
             <Link href="/tools">tools</Link> for the job, and getting straight
             to the point.
             <br />
-          </p>
+          </PageDescription>
 
           <p className="mt-10 text-sm font-medium text-gray-800">
             We&apos;re operating reactively for now, but you can contact us at{' '}
@@ -32,10 +29,9 @@ const Home = () => {
             </a>{' '}
             with your reference.
           </p>
-        </Column>
+        </PageColumn>
       </main>
-      <Footer />
-    </>
+    </Layout>
   )
 }
 
@@ -45,4 +41,4 @@ const Link = ({ children, href }) => (
   </NextLink>
 )
 
-export default Home
+export default HomePage
