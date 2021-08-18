@@ -3,8 +3,9 @@ import { useRouter } from 'next/router'
 import NextLink from 'next/link'
 import { XIcon } from '@heroicons/react/outline'
 import { motion } from 'framer-motion'
-import Column from 'components/Column'
 import cn from 'classnames'
+import Column from 'components/Column'
+import Logo from 'components/Logo'
 
 const mainItems = [
   { label: 'About', href: '/about' },
@@ -28,11 +29,12 @@ const Menu = ({ onClose }) => {
         <Column>
           <div className="flex items-center justify-between w-full my-14">
             <NextLink href="/">
-              <img
+              {/* <img
                 src="/A.png"
                 alt="Appsquare logo"
                 className="w-auto h-10 cursor-pointer"
-              />
+              /> */}
+              <Logo className="w-auto h-10 cursor-pointer" />
             </NextLink>
             <button onClick={onClose}>
               <XIcon className="w-auto h-8 cursor-pointer hover:text-gray-600" />
