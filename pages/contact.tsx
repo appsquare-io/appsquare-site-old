@@ -10,7 +10,7 @@ const ContactPage = () => {
         <PageHeader>Got ideas? Let's hear it.</PageHeader>
 
         <PageDescription>
-          We're updating our website, this section will be done soon :)
+          We're updating our website, this section will be ready soon :)
         </PageDescription>
       </PageColumn>
     </Layout>

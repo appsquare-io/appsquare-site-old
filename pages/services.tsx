@@ -10,7 +10,7 @@ const ServicesPage = () => {
         <PageHeader>Services</PageHeader>
 
         <PageDescription>
-          We're updating our website, this section will be done soon :)
+          We're updating our website, this section will be ready soon :)
         </PageDescription>
       </PageColumn>
     </Layout>

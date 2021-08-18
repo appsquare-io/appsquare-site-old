@@ -10,7 +10,7 @@ const ToolsPage = () => {
         <PageHeader>Tools of the trade</PageHeader>
 
         <PageDescription>
-          We're updating our website, this section will be done soon :)
+          We're updating our website, this section will be ready soon :)
         </PageDescription>
       </PageColumn>
     </Layout>
