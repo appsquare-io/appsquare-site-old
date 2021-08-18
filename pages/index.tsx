@@ -1,64 +1,44 @@
-import { Meta, Divider, List, Footer } from 'components'
+import NextLink from 'next/link'
+import Layout from 'components/Layout'
+import { PageColumn } from 'components/Column'
+import PageHeader from 'components/PageHeader'
+import PageDescription from 'components/PageDescription'
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <div className="flex flex-col items-center w-full px-8 mt-40 md:px-4 lg:px-6">
-      <Meta />
+    <Layout>
+      <main>
+        <PageColumn>
+          <PageHeader>
+            Hands-on digital agency for delightful apps, websites, and ideas.
+          </PageHeader>
 
-      <div className="flex flex-col w-full max-w-xl space-y-10">
-        <img src="/A.png" alt="Appsquare logo" className="w-24" />
+          <PageDescription>
+            Appsquare <span className="line-through">builds</span> crafts{' '}
+            <Link href="/work">digital experiences</Link> for awesome companies
+            around the world. We strive for efficiency, using the best{' '}
+            <Link href="/tools">tools</Link> for the job, and getting straight
+            to the point.
+            <br />
+          </PageDescription>
 
-        <Divider />
-
-        <div className="flex flex-col">
-          <h1 className="text-3xl font-medium tracking-tight">
-            Hello, we&apos;re Appsquare
-          </h1>
-          <p className="mt-3 text-gray-800">
+          <p className="mt-10 text-sm font-medium text-gray-800">
             We&apos;re operating reactively for now, but you can contact us at{' '}
-            <a href="mailto:team@appsquare.io" className="font-medium">
+            <a href="mailto:team@appsquare.io" className="font-bold">
               team@appsquare.io
             </a>{' '}
             with your reference.
           </p>
-        </div>
-
-        <List>
-          <List.Heading>Services</List.Heading>
-          <List.Items>
-            <List.Item title="Business applications &amp; process digitization">
-              By extracting commonalities across businesses and their processes,
-              we can iterate efficiently and deploy releases at significantly
-              reduced cost.
-            </List.Item>
-            <List.Item title="Static &amp; incrementally generated deliverables">
-              The next generation of content websites are built from headless
-              backends, deployed to intercontinental CDNs.
-            </List.Item>
-            <List.Item title="Highly concurrent &amp; fault tolerant systems">
-              By leveraging the BEAM virtual machine at the core of the Open
-              Telecom Platform, as well as modern tools such as Elixir/Phoenix,
-              we can develop concurrent systems for the new age.
-            </List.Item>
-          </List.Items>
-        </List>
-        <List>
-          <List.Heading>Process</List.Heading>
-          <List.Items>
-            <List.Item title="Incremental, minimum, viable">
-              We focus extensively on small, focused iterations - they end with
-              time frames, not dragged on for feature sets.
-            </List.Item>
-            <List.Item title="Design is a core">
-              Treating design as a first class feature keeps us focused on what
-              matters when working with user facing projects.
-            </List.Item>
-          </List.Items>
-        </List>
-      </div>
-      <Footer />
-    </div>
+        </PageColumn>
+      </main>
+    </Layout>
   )
 }
 
-export default Home
+const Link = ({ children, href }) => (
+  <NextLink href={href} passHref>
+    <a className="font-bold text-pink-600">{children}</a>
+  </NextLink>
+)
+
+export default HomePage
