@@ -14,7 +14,7 @@ const mainItems = [
 ]
 
 const subItems = [
-  { label: 'Join the team', href: '/join' },
+  { label: 'Home', href: '/' },
   { label: 'Contact us', href: '/contact' },
   { label: 'Blog', href: '/blog' },
 ]
