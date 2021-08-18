@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useState } from 'react'
+import NextLink from 'next/link'
 import { MenuAlt4Icon } from '@heroicons/react/outline'
 import { AnimatePresence } from 'framer-motion'
-import { Column } from 'components'
+import Column from 'components/Column'
 import Menu from 'components/Menu'
 
 const Navbar = () => {
@@ -25,7 +26,13 @@ const Navbar = () => {
       </AnimatePresence>
       <Column>
         <div className="flex items-center justify-between w-full my-14">
-          <img src="/A.png" alt="Appsquare logo" className="w-auto h-10" />
+          <NextLink href="/">
+            <img
+              src="/A.png"
+              alt="Appsquare logo"
+              className="w-auto h-10 cursor-pointer"
+            />
+          </NextLink>
           <button onClick={() => setShowMenu(true)}>
             <MenuAlt4Icon className="w-auto h-8 cursor-pointer hover:text-gray-600" />
           </button>
