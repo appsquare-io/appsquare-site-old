@@ -5,7 +5,7 @@ interface HeadProps {
   customMeta?: any
 }
 
-export const Head = ({ customMeta }: HeadProps) => {
+const Head = ({ customMeta }: HeadProps) => {
   const router = useRouter()
   const meta = {
     title: 'Appsquare | Digital Agency',
