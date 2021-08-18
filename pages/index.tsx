@@ -17,9 +17,8 @@ const HomePage = () => {
             Appsquare <span className="line-through">builds</span> crafts{' '}
             <Link href="/work">digital experiences</Link> for awesome companies
             around the world. We strive for efficiency, using the best{' '}
-            <Link href="/tools">tools</Link> for the job, and getting straight
-            to the point.
-            <br />
+            <Link href="/tools">tools</Link> for the job, and getting{' '}
+            <Link href="/blog">straight to the point</Link>.
           </PageDescription>
 
           <p className="mt-10 text-sm font-medium text-gray-800">
