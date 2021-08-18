@@ -23,4 +23,10 @@ export const Column = ({
   </div>
 )
 
+export const PageColumn = ({ children }) => (
+  <Column size="small" className="mt-0 sm:mt-20 md:mt-28">
+    {children}
+  </Column>
+)
+
 export default Column
