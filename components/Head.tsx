@@ -18,6 +18,7 @@ const Head = ({ customMeta }: HeadProps) => {
     <NextHead>
       <link rel="icon" href="/favicon.ico" />
       <title>{meta.title}</title>
+      <meta name="theme-color" content="#FFFFFF" />
       <meta name="robots" content="follow, index" />
       <meta content={meta.description} name="description" />
       <meta
